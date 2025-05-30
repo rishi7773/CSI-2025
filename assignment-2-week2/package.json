@@ -1,0 +1,11 @@
+{
+    "name": "assignment-2-week2",
+    "version": "1.0.0",
+    "main": "file-manager.js",
+    "scripts": {
+        "start": "node file-manager.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}
