@@ -1,0 +1,12 @@
+{
+    "name": "assignment-1-week",
+    "version": "1.0.0",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}
