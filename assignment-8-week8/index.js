@@ -37,11 +37,11 @@ app.get('/', (req, res) => {
 
 app.post('/upload', upload.single('file'), (req, res) => {
     if (!req.file) {
-        return res.status(400).json({ error: '❌ No file uploaded' });
+        return res.status(400).json({ error: ' No file uploaded' });
     }
 
     res.status(200).json({
-        message: '✅ File uploaded successfully',
+        message: 'File uploaded successfully',
         filename: req.file.filename,
         filePath: `/uploads/${req.file.filename}`
     });
@@ -67,7 +67,7 @@ app.get('/yelp', async(req, res, next) => {
         res.status(200).json(response.data);
     } catch (error) {
        
-        console.error('❌ Yelp API Error:', error.response ? .data || error.message);
+        console.error(' Yelp API Error:', error.response ? .data || error.message);
 
        
         res.status(error.response ? .status || 500).json({
@@ -79,11 +79,11 @@ app.get('/yelp', async(req, res, next) => {
 
 
 app.use((err, req, res, next) => {
-    console.error('❌ Internal Server Error:', err.stack);
+    console.error(' Internal Server Error:', err.stack);
     res.status(500).json({ error: 'Something went wrong!' });
 });
 
 
 app.listen(PORT, () => {
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
+    console.log(` Server running on http://localhost:${PORT}`);
 });
